@@ -16,23 +16,31 @@ function Checkout() {
                 </h1>
 
                 <h3 className="font-semibold text-lg text-green-primary">Customer details</h3>
-                <section className="flex gap-8 mt-4">
+                <section className="flex flex-col sm:flex-row gap-8 mt-4">
                     <form>
-                        <div className="flex gap-4">
-                            <div>
-                                <Input variant="secondary" inputType="text" />
+                        <div className="flex gap-4 flex-col sm:flex-row">
+                            <div className=" w-full">
+                                <Input variant="secondary" inputType="text" className="w-full " />
                                 <label className="block text-base">First Name</label>
                             </div>
-                            <div>
-                                <Input variant="secondary" inputType="text" />
+                            <div className=" w-full">
+                                <Input
+                                    variant="secondary"
+                                    inputType="text"
+                                    className="w-full "
+                                />
                                 <label className="block text-base">Middle Name</label>
                             </div>
-                            <div>
-                                <Input variant="secondary" inputType="text" />
+                            <div className=" w-full">
+                                <Input
+                                    variant="secondary"
+                                    inputType="text"
+                                    className="w-full"
+                                />
                                 <label className="block text-base">Last Name</label>
                             </div>
                         </div>
-                        <div className="flex gap-4 mt-4">
+                        <div className="flex gap-4 mt-4 flex-col sm:flex-row">
                             <div className=" w-full">
                                 <Input
                                     variant="secondary"
@@ -70,21 +78,21 @@ function Checkout() {
                     </form>
 
                     <div className="p-6 bg-[#CCE7D0] flex flex-col gap-5">
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 flex-wrap">
                             <img src={Speaker} alt="speaker" className="h-28" />
                             <div className="self-end">
                                 <h3 className="text-lg">sp134</h3>
                                 <p className="font-bold text-xl">N1,000,000</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 flex-wrap">
                             <img src={Speaker} alt="speaker" className="h-28" />
                             <div className="self-end">
                                 <h3 className="text-lg">sp134</h3>
                                 <p className="font-bold text-xl">N1,000,000</p>
                             </div>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex gap-4 flex-wrap">
                             <img src={Speaker} alt="speaker" className="h-28" />
                             <div className="self-end">
                                 <h3 className="text-lg">sp134</h3>
@@ -102,11 +110,13 @@ function Checkout() {
                         <h3 className="text-green-primary font-bold text-right text-xl">
                             N1,100,000.00
                         </h3>
-                        <p className="text-base text-[#898989]">Home delivery charges included</p>
+                        <p className="text-base text-[#898989] text-right">
+                            Home delivery charges included
+                        </p>
                     </div>
                 </section>
 
-                <div className="my-14 flex justify-between">
+                <div className="my-14 flex flex-col gap-3 sm:flex-row sm:justify-between">
                     <Button className="rounded-none px-24 py-5 flex gap-2 items-center">
                         <img src={Tag} alt="" className="w-4" /> Purchase
                     </Button>
