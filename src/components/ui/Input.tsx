@@ -28,7 +28,7 @@ const inputVariant = cva(
         variants: {
             variant: {
                 primary: "bg-transparent focus:border-white text-white",
-                secondary: "bg-white text-grey-400 border-grey-50 focus-visible:ring-offset-2 focus-visible:ring-grey-400 focus-visible:ring-2"
+                secondary: "bg-[#FFFEFB] text-gray-400 border-green-primary rounded-lg focus-visible:ring-offset-2 focus-visible:ring-grey-400 focus-visible:ring-2"
             },
         },
         defaultVariants:{
