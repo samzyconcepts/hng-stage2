@@ -88,7 +88,7 @@ const Home = () => {
                     </div>
 
                     {/* product display */}
-                    <div className="flex">
+                    <div className="mt-16 flex justify-between">
                         <Product/>
                         <Product/>
                         <Product/>

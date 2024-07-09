@@ -65,7 +65,7 @@ const Navbar = () => {
                         }}>
                         Account
                     </NavLink>
-                    <NavLink to="/cart">
+                    <NavLink to="/checkout">
                         <img src={Cart} alt="shopping cart" className="w-8" />
                     </NavLink>
                     <Button variant="ghost">Contact Us</Button>

@@ -1,6 +1,7 @@
 import Button from "./ui/Button";
 import Speaker from "../assets/speaker.png";
 import star from "../assets/stars.png";
+import arrowDown from "../assets/arrow-down.png"
 
 export const Product = () => {
     return (
@@ -12,13 +13,18 @@ export const Product = () => {
                 15 Inch / 4800watt / Pure Acostic / 100 coil /Double magnet
             </span>
             <img src={star} alt="star" className="w-24 mx-auto my-4" />
-            <div className="flex gap-2">
+            <div className="flex gap-2 justify-center">
                 <Button variant="primary" className="rounded-none">
                     Purchase
                 </Button>
                 <Button variant="tertiary" className="rounded-none">
                     Add to Cart
                 </Button>
+
+                <div className="border border-green-primary w-10 flex items-center justify-center text-green-primary">
+                    1
+                    <img src={arrowDown} alt="arrow down" className="h-fit w-4" />
+                </div>
             </div>
         </div>
     );
