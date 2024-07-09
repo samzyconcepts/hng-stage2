@@ -13,7 +13,7 @@ const Navbar = () => {
                     <img src={logo} alt="SP Audio" className="w-14" />
                 </NavLink>
                 <div className="flex gap-8 items-center">
-                    <div className="relative">
+                    <div className="relative hidden md:block">
                         <Input
                             inputType="search"
                             placeholder="Search for Product"

@@ -24,19 +24,11 @@ function Checkout() {
                                 <label className="block text-base">First Name</label>
                             </div>
                             <div className=" w-full">
-                                <Input
-                                    variant="secondary"
-                                    inputType="text"
-                                    className="w-full "
-                                />
+                                <Input variant="secondary" inputType="text" className="w-full " />
                                 <label className="block text-base">Middle Name</label>
                             </div>
                             <div className=" w-full">
-                                <Input
-                                    variant="secondary"
-                                    inputType="text"
-                                    className="w-full"
-                                />
+                                <Input variant="secondary" inputType="text" className="w-full" />
                                 <label className="block text-base">Last Name</label>
                             </div>
                         </div>

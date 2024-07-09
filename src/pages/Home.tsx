@@ -11,7 +11,7 @@ const Home = () => {
         <>
             <header className="bg-green-light relative overflow-hidden">
                 <Navbar />
-                <div className="container pt-16 grid grid-cols-2 gap-6 h-[568px]">
+                <div className="container py-16 md:pb-0 grid grid-cols-1 md:grid-cols-2 gap-6 h-auto md:h-[568px]">
                     <div>
                         <h1 className="text-6xl font-semibold text-green-primary leading-normal">
                             Shop from the best instrument plug
@@ -42,7 +42,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="hidden md:block">
                         <img
                             src={heroImg}
                             alt="hero image"
@@ -52,7 +52,7 @@ const Home = () => {
                 </div>
             </header>
             <section className="bg-green-primary">
-                <div className="container text-white flex justify-between py-8">
+                <div className="container text-white flex justify-between py-8 flex-wrap">
                     <div>
                         <img src={sheet} alt="sheet" className="w-10 mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
@@ -88,7 +88,7 @@ const Home = () => {
                     </div>
 
                     {/* product display */}
-                    <div className="mt-16 flex justify-between">
+                    <div className="mt-16 flex flex-wrap justify-between">
                         <Product/>
                         <Product/>
                         <Product/>
