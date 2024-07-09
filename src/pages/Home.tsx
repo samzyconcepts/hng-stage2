@@ -11,22 +11,22 @@ const Home = () => {
         <>
             <header className="bg-green-light relative overflow-hidden">
                 <Navbar />
-                <div className="container py-16 md:pb-0 grid grid-cols-1 md:grid-cols-2 gap-6 h-auto md:h-[568px]">
+                <div className="container py-16 md:pb-0 grid grid-cols-1 lg:grid-cols-2 gap-6 h-auto md:h-[568px]">
                     <div>
-                        <h1 className="text-6xl font-semibold text-green-primary leading-normal">
+                        <h1 className="text-center lg:text-left text-4xl md:text-6xl font-semibold text-green-primary lg:leading-normal">
                             Shop from the best instrument plug
                         </h1>
-                        <p className="text-[#636363]">
+                        <p className="mt-4 text-center lg:text-left text-[#636363]">
                             It all Starts With A Click and You are One Step Ahead to Finding Your
                             Dream Speaker with quality
                         </p>
 
-                        <div className="mt-8 flex gap-4">
-                            <Button variant="primary">Sign In</Button>
-                            <Button variant="secondary">Sign up</Button>
+                        <div className="mt-8 flex gap-4 justify-center">
+                            <Button variant="primary" className="lg:px-16">Sign In</Button>
+                            <Button variant="secondary" className="lg:px-16">Sign up</Button>
                         </div>
 
-                        <div className="flex justify-between text-center bg-white p-4 rounded-md w-96 mt-8 shadow-lg">
+                        <div className="flex justify-between text-center bg-white p-4 rounded-md w-auto lg:w-96 mt-8 shadow-lg">
                             <div>
                                 <h1 className="font-bold text-2xl text-green-primary">2k</h1>
                                 <p className="text-sm">Speaker Display</p>
@@ -42,7 +42,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <img
                             src={heroImg}
                             alt="hero image"
@@ -61,19 +61,19 @@ const Home = () => {
                         <img src={settings} alt="settings" className="w-10  mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
                     </div>
-                    <div>
+                    <div className="hidden lg:block">
                         <img src={sheet} alt="sheet" className="w-10  mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
                     </div>
-                    <div>
+                    <div className="hidden lg:block">
                         <img src={settings} alt="settings" className="w-10 mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
                     </div>
-                    <div>
+                    <div className="hidden lg:block">
                         <img src={sheet} alt="sheet" className="w-10 mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
                     </div>
-                    <div>
+                    <div className="hidden lg:block">
                         <img src={settings} alt="settings" className="w-10 mx-auto" />
                         <p className="font-bold text-lg">Water Resistance</p>
                     </div>
@@ -88,7 +88,7 @@ const Home = () => {
                     </div>
 
                     {/* product display */}
-                    <div className="mt-16 flex flex-wrap justify-between">
+                    <div className="mt-16 flex flex-wrap justify-center lg:justify-between">
                         <Product/>
                         <Product/>
                         <Product/>

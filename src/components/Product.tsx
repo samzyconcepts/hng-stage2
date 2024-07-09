@@ -5,7 +5,7 @@ import arrowDown from "../assets/arrow-down.png"
 
 export const Product = () => {
     return (
-        <div className="shadow-lg px-8 py-4 w-96 rounded-lg">
+        <div className="shadow-lg px-4 md:px-8 py-4 w-96 rounded-lg">
             <img src={Speaker} alt="Speaker image" className="w-full" />
             <h2 className="text-green-primary font-bold text-lg text-center">Sp135</h2>
             <p className="text-green-primary font-bold text-lg text-center">N1,000,000</p>
@@ -14,10 +14,10 @@ export const Product = () => {
             </span>
             <img src={star} alt="star" className="w-24 mx-auto my-4" />
             <div className="flex gap-2 justify-center">
-                <Button variant="primary" className="rounded-none">
+                <Button variant="primary" className="rounded-none text-xs lg:text-sm">
                     Purchase
                 </Button>
-                <Button variant="tertiary" className="rounded-none">
+                <Button variant="tertiary" className="rounded-none text-xs lg:text-sm">
                     Add to Cart
                 </Button>
 
