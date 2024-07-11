@@ -5,6 +5,7 @@ import { Product } from "../components/Product";
 import heroImg from "../assets/heroImg.jpg";
 import sheet from "../assets/sheet.png"
 import settings from "../assets/settings.png"
+import Footer from "../components/ui/Footer";
 
 const Home = () => {
     return (
@@ -21,7 +22,7 @@ const Home = () => {
                             Dream Speaker with quality
                         </p>
 
-                        <div className="mt-8 flex gap-4 justify-center">
+                        <div className="mt-8 flex gap-4 justify-center md:justify-start">
                             <Button variant="primary" className="lg:px-16">Sign In</Button>
                             <Button variant="secondary" className="lg:px-16">Sign up</Button>
                         </div>
@@ -95,6 +96,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Footer />
         </>
     );
 };

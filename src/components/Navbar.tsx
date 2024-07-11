@@ -76,7 +76,7 @@ const Navbar = () => {
             </nav>
 
             {/* mobile */}
-            <nav className=" lg:hidden sticky top-0 bg-green-primary h-16 flex px-8 justify-between items-center">
+            <nav className="lg:hidden sticky top-0 bg-green-primary h-16 flex px-8 justify-between items-center">
                 <NavLink to="/">
                     <img src={logo} alt="SP Audio" className="w-14" />
                 </NavLink>
